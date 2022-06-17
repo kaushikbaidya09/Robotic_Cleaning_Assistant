@@ -1,0 +1,82 @@
+<!-- Complete project details: https://randomnerdtutorials.com/esp32-web-server-websocket-sliders/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP WEB DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <h1>Remote Car</h1>
+    </div>
+    <div class="content">
+        <div class="card-grid1">
+            <div class="card1">
+                <div class="table">
+                        <table>
+                            <tr><td colspan="3" align="center">
+                                <button class="button-65" role="button" onmousedown="toggleCheckbox('forward');
+                                                    " ontouchstart="toggleCheckbox('forward');
+                                                    " onmouseup="toggleCheckbox('stop');
+                                                    " ontouchend="toggleCheckbox('stop');">Forward</button>
+                                </td>
+                            </tr>
+                            <tr><td align="center">
+                                    <button class="button-65" role="button" onmousedown="toggleCheckbox('left');
+                                                        " ontouchstart="toggleCheckbox('left');
+                                                        " onmouseup="toggleCheckbox('stop');
+                                                        " ontouchend="toggleCheckbox('stop');">Left</button>
+                                </td>
+                                <td align="center">
+                                    <button class="button-65" role="button" onmousedown="toggleCheckbox('stop');
+                                                        " ontouchstart="toggleCheckbox('stop');">Stop</button>
+                                </td>
+                                <td align="center">
+                                    <button class="button-65" role="button" onmousedown="toggleCheckbox('right');
+                                                        " ontouchstart="toggleCheckbox('right');
+                                                        " onmouseup="toggleCheckbox('stop');
+                                                        " ontouchend="toggleCheckbox('stop');">Right</button>
+                                </td>
+                            </tr>
+                            <tr><td colspan="3" align="center">
+                                    <button class="button-65" role="button" onmousedown="toggleCheckbox('backward');
+                                                        " ontouchstart="toggleCheckbox('backward');
+                                                        " onmouseup="toggleCheckbox('stop');
+                                                        " ontouchend="toggleCheckbox('stop');">Backward</button>
+                                </td>
+                            </tr><br>
+                        </table>
+                        <p></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="card-grid">
+            <div class="card">
+                <p class="card-title"> Flash LED </p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider1" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">Brightness: <span id="sliderValue1"></span> &percnt;</p>
+            </div>
+            <div class="card">
+                <p class="card-title"> FAN Speed </p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider2" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">RPM: <span id="sliderValue2"></span> &percnt;</p>
+            </div>
+            <div class="card">
+                <p class="card-title"> Motor Speed </p>
+                <p class="switch">
+                    <input type="range" onchange="updateSliderPWM(this)" id="slider3" min="0" max="100" step="1" value ="0" class="slider">
+                </p>
+                <p class="state">Speed: <span id="sliderValue3"></span> &percnt;</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
