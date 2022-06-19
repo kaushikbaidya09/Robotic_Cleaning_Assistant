@@ -27,6 +27,7 @@ const int ledChannel1 = 0;
 const int FAN_Channel = 1;
 const int M1_Channel  = 2;
 const int M2_Channel  = 3;
+const int Power_channel = 4;
 // PWM 8
 // const int resolution = 8;
 
@@ -180,14 +181,14 @@ void setup() {
   ledcSetup(FAN_Channel, freq, 8);
   ledcSetup(M1_Channel, freq, 8);
   ledcSetup(M2_Channel, freq, 8);
-  ledcSetup(6, freq, 8);
+  ledcSetup(Power_channel, freq, 8);
 
   // attach the channel to the GPIO to be controlled
   ledcAttachPin(LED_Pin, ledChannel1);
   ledcAttachPin(FAN_Pin, FAN_Channel);
   ledcAttachPin(En_Pin1, M1_Channel);
   ledcAttachPin(En_Pin2, M2_Channel);
-  ledcAttachPin(Power_ON, 6);
+  ledcAttachPin(Power_ON, Power_channel);
 
   initWebSocket();
 
@@ -202,7 +203,7 @@ void setup() {
 }
 
 void loop() {
-  ledcWrite(6, 10);
+  ledcWrite(Power_channel, 10);
   ledcWrite(ledChannel1, dutyCycle1);
   ledcWrite(FAN_Channel, dutyCycle2);
   ledcWrite(M1_Channel, dutyCycle_M1);
