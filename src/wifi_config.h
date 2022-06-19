@@ -7,14 +7,8 @@
   const char* ssid = "HelloWorld";
   const char* password = "987654321";
 #elif !AP_Mode
-  //const char* ssid = "CHINNU'S ROG";
-  //const char* password = "KINGKANFC";
-
-  // const char* ssid = "not for all";
-  // const char* password = "jay@7989";
-
-  const char* ssid = "Restricted Connection";
-  const char* password = "24681355";
+  const char* ssid = "YOUR WIFI SSID";
+  const char* password = "YOUR PASSWORD";
 
 #endif
 
