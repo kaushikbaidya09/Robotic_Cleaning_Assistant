@@ -6,4 +6,4 @@ Room Cleaning Robot ESP32 Cam is a controller + L293d bridge motor driver that c
 
 ## Design
 
-![Image link]()
+![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image1.jpg?raw=true)
