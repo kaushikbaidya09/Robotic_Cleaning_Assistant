@@ -11,7 +11,7 @@ Enter WiFi credentials and configure wiFi setup in [wifi_config.h](https://githu
 
 Set _AP_Mode_ True to set ESP32 as wiFi host (hotspot).
 
-```
+```C++
 #define AP_Mode false //TRUE = AP mode //FALSE = WiFi Mode
 
 #if AP_Mode
@@ -25,7 +25,7 @@ Set _AP_Mode_ True to set ESP32 as wiFi host (hotspot).
 ```
 
 _AP_Mode_ can be used to set a static IP address. 
-```
+```C++
 IPAddress local_IP(192, 168, 157, 254);
 IPAddress gateway(192, 168, 157, 254);
 IPAddress subnet(255, 255, 0, 0);
