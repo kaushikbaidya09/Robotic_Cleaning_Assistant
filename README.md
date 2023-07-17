@@ -39,7 +39,7 @@ WiFi.softAPConfig(local_IP, local_IP, subnet);
 ![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image2.jpg?raw=true)
 
 ## Web Application
-### Controlling through mobile and Laptop
+Controlling through mobile and Laptop
 
 ![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/SC1.jpg?raw=true)
 
