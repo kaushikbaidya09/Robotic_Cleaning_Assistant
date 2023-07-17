@@ -9,7 +9,7 @@ Room Cleaning Robot ESP32 Cam is a controller + L293d bridge motor driver that c
 ### WiFi Setup
 Enter WiFi credentials and configure wiFi setup in [wifi_config.h](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/src/wifi_config.h) file.
 
-Set _AP_Mode_ True to set ESP32 as wiFi host (hotspot).
+Set _AP_Mode_ = True for ESP32 as wiFi host (hotspot).
 
 ```C++
 #define AP_Mode false //TRUE = AP mode //FALSE = WiFi Mode
@@ -34,12 +34,10 @@ WiFi.softAPConfig(local_IP, local_IP, subnet);
 
 ## Design
 
-![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image1.jpg?raw=true) 
-
-![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image2.jpg?raw=true)
+![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image1.jpg?raw=true)  ![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/image2.jpg?raw=true)
 
 ## Web Application
-Controlling through mobile and Laptop
+### Controlling through mobile and Laptop
 
 ![Image link](https://github.com/kaushikbaidya09/Room_Cleaning_Robot/blob/main/Pics/SC1.jpg?raw=true)
 
