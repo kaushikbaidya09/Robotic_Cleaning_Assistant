@@ -1,17 +1,3 @@
-/*------------------------------------------------------------------------------
-  09/05/2022
-  Author    : Kaushik Baidya
-  Platforms : ESP32 CAM
-  Language  : C++/Arduino
-  File      : Mini_Project_C
-  Project   : Room Cleaning Robot
-  ------------------------------------------------------------------------------
-  Description: 
-  The Room Cleaning Robot is a Vaccum-Based Cleaning robot that collects the dust
-  on the floor. Used ESP32 microcontroller and created a web interface to control 
-  the robot through Wi-Fi.
-------------------------------------------------------------------------------*/
-
 #include <Arduino.h>
 #include <WiFi.h>
 #include <AsyncTCP.h>
