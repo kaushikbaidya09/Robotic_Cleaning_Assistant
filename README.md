@@ -1,10 +1,10 @@
-# Room_Cleaning_Robot
+# Robotic_Cleaning_Assistant
 
 In today's fast-paced and busy lifestyles, finding time for basic household duties, such as cleaning, can be challenging. Cleaning the main areas of a room might be manageable, but reaching inaccessible spots like under the bed or couch can be difficult and time-consuming. However, imagine having a robot that could handle these tasks for you, allowing you to relax or focus on other work while it takes care of the cleaning. A cleaning robot would provide the convenience and efficiency needed to maintain a clean and tidy living space effortlessly.
 
 ## Overview
 
-Room Cleaning Robot ESP32 Cam is a controller + L293d bridge motor driver that can drive two DC motors clockwise and counterclockwise rotations with adjustable rotation speed, 18650 battery with 3s 12v 10A BMS and 5v power distribution, 3-wheeled frame with two active wheels for a differential speed steering mechanism. Controlled wirelessly through wifi with web applications created using HTML, CSS and javascript stored within the ESP32 filesystem hosted to connected wifi can be accessed by browsing IP address. Programmed with PlatformIO VScode.
+Cleaning Assistant ESP32 Cam is a controller + L293d bridge motor driver that can drive two DC motors clockwise and counterclockwise rotations with adjustable rotation speed, 18650 battery with 3s 12v 10A BMS and 5v power distribution, a 3-wheeled frame with two active wheels for a differential speed steering mechanism. Controlled wirelessly through wifi with web applications created using HTML, CSS and javascript stored within the ESP32 filesystem hosted to connected wifi can be accessed by browsing IP address. Programmed with PlatformIO VScode.
 
 ## Installation
 
